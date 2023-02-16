@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(126, 183, 227);
+}
+
+.container{
+    width: 28rem;
+    height: 10rem;
+    transition: .3s ease-in;
+}
+
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container input{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    outline: none;
+    margin-right: .5rem;
+    border-width: 0 0 1px 0;
+    border-color: black;
+
+}
