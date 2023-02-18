@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,28 +11,40 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(126, 183, 227);
+    background-color: rgb(34, 60, 79);
+    font-family: 'Lato', sans-serif;
 }
 
 .container{
-    width: 28rem;
-    height: 10rem;
+    width: 20rem;
     transition: .3s ease-in;
 }
 
 .search-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    height: 3rem;
+    position: relative;
 }
 
 .search-container input{
     width: 100%;
-    font-size: 1.5rem;
-    padding: 1rem 1.5rem;
+    height: 100%;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 3.3rem;
+    border: none;
+    border-radius: 2rem;
     outline: none;
-    margin-right: .5rem;
-    border-width: 0 0 1px 0;
-    border-color: black;
+    background-color: rgb(80, 121, 150);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
 
+.search-container i{
+    position: relative;
+    right: 2.5rem;
+    color: white;
 }
