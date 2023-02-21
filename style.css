@@ -17,20 +17,12 @@ body{
 
 .container{
     width: 20rem;
-    transition: .3s ease-in;
 }
 
-.search-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3rem;
-    position: relative;
-}
-
-.search-container input{
+input{
+    margin: 0 auto;
     width: 100%;
-    height: 100%;
+    height: 3rem;
     font-size: 1.2rem;
     padding-left: 1.5rem;
     padding-right: 3.3rem;
@@ -43,8 +35,56 @@ body{
     font-weight: 400;
 }
 
+input::placeholder{
+    color: rgba(255, 255, 255, .4);
+}
+
+.search-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 23rem;
+    position: relative;
+    background-color: rgb(80, 121, 150);
+    border-radius: 2rem;
+    color: white;
+    padding: 2rem;
+}
+
+.search-container .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.search-container .windAndHumid{
+    display: flex;
+}
+
+.search-container .windAndHumid .wind{
+    margin-right: 1.5rem;
+}
+
+.search-container .temperature{
+    font-size: 46px;
+    font-weight: 700;
+}
+
 .search-container i{
     position: relative;
     right: 2.5rem;
     color: white;
+    cursor: pointer;
 }
+
+.hidden{
+    display: none;
+}
+
+
+/*TAR BORT X I INPUT*/
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
